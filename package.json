@@ -1,0 +1,44 @@
+{
+  "name": "AshrabKahwa",
+  "publisher": "AshrabKahwa",  
+  "displayName": "اشرب قهوه",
+  "description": "علشان احنا بنقدر القهوه ك بصمجيه عملنالكم أكستنشن تفكركم كل شويه تشربوا قهوه :D",
+  "version": "0.0.1",
+  "icon": "images/download.jpeg",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "Publisher.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "homepage": "https://www.linkedin.com/in/devhammam1/",
+  "repository": {
+    "type": "git",
+    "url": "github.com/Hammam378"  
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
